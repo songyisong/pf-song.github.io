@@ -40,16 +40,6 @@ var swiper = new Swiper('.swiper-container', {
 
 });
 
-// 메뉴
-
-
-// $(".intro > .logo").on("mouseenter", function(){
-//     $(this).find(".global_btns").stop().slideDown(250);
-// });
-// $(".intro > .logo").on("mouseleave", function(){
-//     $(this).find(".global_btns").stop().slideUp(300);
-// });
-
 $(".intro_white_wrap").click(function(){
     $(this).addClass("disable");
 });
@@ -60,58 +50,6 @@ $(".logo > a").click(function() {
         $(this).parent().siblings("nav").addClass("on");
     }
 });
-// $(function(){ 
-//     $(".logo > a").on("click",function(){ 
-//         $("nav").toggleClass("on"); 
-//     }); 
-// });
-
-// $(".global_item").off("click").on("click", function(){
-//     if($(".global_item").hasClass("active")){
-//         $(".global_item").removeClass("active");
-//     } else {
-//         $(".global_item").addClass("active");
-//     }
-// });
-
-
-// $('.btn_all_menu').click(function(e){
-//     e.preventDefault();
-//     if( $(this).hasClass('active') ){
-//     //	$('.allMenuWrap ').hide();
-//         $('.allMenuWrap ').removeClass('show');
-//         $('.btn_all_menu').removeClass('active');
-//         $('.allMenu .hasDep2 .dep2').slideUp(250);
-//     }else{
-//     //	$('.allMenuWrap ').show();
-//         $('.allMenuWrap ').addClass('show');
-//         $('.btn_all_menu').addClass('active');
-//     }
-// });
-
-
-
-// $("body").click(function(e){
-//     if(!$("#menu").has(e.target).length){
-//         mainMenuHide();
-//     }
-// });
-/*
-$('.logo').click(function() {
-    $(this).toggleClass('active');
-      $(this).next().toggleClass('open');
-      $('body').toggleClass('clip');
-});
-$('#bg a').click(function() {
-    $('#menu').removeClass('active');
-    $('#bg').removeClass('open');
-    $('body').removeClass('clip');
-});
-*/
-// $(".logo > a").click(function() {
-//     $(this).find("nav").removeClass("on");
-// });
-
 
 new fullpage("#fullpage",{
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
