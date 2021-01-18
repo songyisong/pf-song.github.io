@@ -16,7 +16,7 @@ section .fadeInUp, section .fadeInLeft, section .fadeInRight {opacity: 0}
 .anim-txt {opacity:0; font-size:50px; line-height:1.5; font-family:'Montserrat', 'NotoSans', 'Arial', '맑은 고딕', '돋움', dotum, AppleGothic, sans-serif; color:rgb(31, 31, 31); transition:all 0.3s ease-in-out;}
 .anim-txt.active.anim1{font-size:60px; font-style:italic; color:#c9176a; -webkit-animation: focus-in-expand 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation: focus-in-expand 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
 .anim-txt.active {-webkit-animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
-
+ 
 
 /* //mark: header */
 #wrap header{position:relative;width:100%;height:100%;z-index:999}
@@ -43,7 +43,7 @@ section .fadeInUp, section .fadeInLeft, section .fadeInRight {opacity: 0}
 
 .container .about{position:relative;}
 .container .about:after{content:'ABOUT.';display:block;position:absolute;bottom:0;right:0;color:rgba(218, 218, 218, 0.22);font-size:300px;line-height:234px;text-align:right;font-family: 'Anton', sans-serif;}
-.container .about .resume{width:600px;margin:0 auto;}
+.container .about .resume{position:absolute;top:33%;left:20%;transform:translate(-50%, -50%);width:600px;z-index:999;}
 .container .about .resume p{margin-bottom:40px;font-size:25px;line-height:40px;}
 .container .about .resume strong{display:block;font-size:15px;font-weight:normal;color:dimgray}
 .container .about .resume a{display:inline-block;margin-top:10px;padding:15px 40px;background-color:#000;border-radius:2px;}
@@ -166,7 +166,7 @@ footer .copyright{display:inline;color:rgb(204, 204, 204)}
 
 /* */
 @media screen and (max-width:768px) {
-	.container .about .resume{max-width:100%;padding:0 50px;box-sizing:border-box;}
+	.container .about .resume{max-width:100%;padding:0 50px;box-sizing:border-box;left:0;}
 	.container .about .resume p{font-size:20px;line-height:32px;}
 	.container .contact .contact-info{max-width:100%;padding:0 50px;box-sizing:border-box;top:40%;}
 	.container .contact .contact-info .info-txt{font-size:20px;line-height:30px;}
