@@ -1,7 +1,5 @@
 Splitting();
 
-
-
 gsap.defaults({
     opacity:0,
     duration:1.5,
@@ -32,15 +30,11 @@ new fullpage("#fullpage",{
     scrollingSpeed:1000    
 });
 
-$(".intro_white_wrap").click(function(){
-    $(this).addClass("disable");
-});
-
 //menu
 $(".logo > a").click(function() {
-    if($("nav").hasClass("on")){ // nav실행
+    if($("nav").hasClass("on")){
         $(this).parent().siblings("nav").removeClass("on");
-    } else { //nav닫힘
+    } else {
         $(this).parent().siblings("nav").addClass("on");
     }
 });
