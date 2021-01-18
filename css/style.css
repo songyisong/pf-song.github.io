@@ -178,7 +178,8 @@ footer .copyright{display:inline;color:rgb(204, 204, 204)}
 	.work .p-list .swiper-pagination.pgBtn{display:none;}
 }
 @media screen and (max-width:480px) {
-	
+	#wrap header #menu.on{max-width:100%;padding:80px 0 0;}
+	#wrap header #menu .global-item strong{font-size:33px;line-height:2.0;}
 	#wrap .container .mainVisual .intro-txt p{font-size:40px;line-height:50px;}
 	.global-footer span:after{display:none;}
 	footer .copyright{display:block;padding-top:10px;}
