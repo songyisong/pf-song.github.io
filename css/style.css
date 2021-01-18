@@ -166,8 +166,20 @@ footer .copyright{display:inline;color:rgb(204, 204, 204)}
 
 /* */
 @media screen and (max-width:768px) {
-	#wrap .container .mainVisual .intro-txt p{font-size:100px;line-height:90px;}
+	.container .about .resume{max-width:100%;padding:0 50px;box-sizing:border-box;}
+	.container .about .resume p{font-size:20px;line-height:32px;}
+	.container .contact .contact-info{max-width:100%;padding:0 50px;box-sizing:border-box;top:40%;}
+	.container .contact .contact-info .info-txt{font-size:20px;line-height:30px;}
+	.container .contact .contact-info .info-txt a{font-size:20px;}
+	.work .p-list .pj-img{display:none;}
+	.work .p-list .lineup-pj .pj-name{position:initial;margin-top:20px;}
+	.work .lineup-pj .pj-name strong{font-size:30px;line-height:40px;}
+	.work .p-list .lineup-pj{padding:0 50px;box-sizing:border-box;}
+	.work .p-list .swiper-pagination.pgBtn{display:none;}
 }
 @media screen and (max-width:480px) {
-	#wrap .container .mainVisual .intro-txt p{font-size:50px;}
+	
+	#wrap .container .mainVisual .intro-txt p{font-size:40px;line-height:50px;}
+	.global-footer span:after{display:none;}
+	footer .copyright{display:block;padding-top:10px;}
 }
